@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.burger-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 10rem 0;
+  height: 100%;
+  width: 100%;
+}
+
+.burger-container > :hover {
+  transform: scale(1.2);
+  transition-duration: 500ms;
+}
+
+.burger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 30%;
+}
+
+.top-bun {
+  width: 100%;
+  min-height: 5rem;
+  background: #eea929;
+  border-radius: 5rem 5rem 0 0;
+}
+
+.bottom-bun {
+  min-width: 100%;
+  min-height: 3rem;
+  background: #eea929;
+  border-radius: 0 0 5rem 5rem;
+}
+
+.meat,
+.cheese,
+.tomatos,
+.lettuce {
+  min-height: 1rem;
+  min-width: 110%;
+  border: 1px solid black;
+  margin: 0.2rem 0;
+}
+
+.meat {
+  background: brown;
+  min-width: 105%;
+  min-height: 2rem;
+  border-radius: 2rem;
+}
+
+.cheese {
+  background: yellow;
+  min-width: 110%;
+  min-height: 1.25rem;
+  border-radius: 1rem;
+}
+
+.tomatos {
+  background: #e34040;
+  min-width: 100%;
+}
+
+.lettuce {
+  background: greenyellow;
+  min-width: 110%;
+  min-height: 1.25rem;
+  border-radius: 2rem;
+}
+
+@media screen and (max-width: 1150px) {
+  .burger {
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .burger {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .burger {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .burger {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .burger {
+    width: 70%;
+  }
+}
